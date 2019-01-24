@@ -47,7 +47,7 @@ func main() {
 		Timeout:   time.Duration(10) * time.Second,
 	}
 
-	p := newPorxy(*c)
+	p := newProxy(*c)
 	err = http.ListenAndServe(fmt.Sprintf(":%d", c.BindPort), p)
 	if err != nil {
 		fmt.Printf("ListenAndServe: %s\n", err.Error())

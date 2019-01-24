@@ -15,7 +15,7 @@ type proxy struct {
 	config proxyConfig
 }
 
-func newPorxy(c proxyConfig) *proxy {
+func newProxy(c proxyConfig) *proxy {
 	return &proxy{
 		config: c,
 	}
